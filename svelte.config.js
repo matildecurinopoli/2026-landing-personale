@@ -1,7 +1,16 @@
 import adapter from "@sveltejs/adapter-static";
+import { vitePreProcess } from "@sveltejs/vite-plugin-svelte";
+import { mdsvex } from "mdsvex";
+
+/** @type {import('mdsvex').MdsvexOptions} **/
+const mdsvexConfig = {
+  extensions: [".md"],
+};
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
+  extensions: [".svelte", ".md"],
+  preprocess: [vitePreProcess(), mdsvex(mdsvexConfig)],
   compilerOptions: {
     // Force runes mode for the project, except for libraries. Can be removed in svelte 6.
     runes: ({ filename }) =>
@@ -9,8 +18,6 @@ const config = {
   },
   kit: {
     adapter: adapter({
-      // default options are shown. On some platforms
-      // these options are set automatically — see below
       pages: "build",
       assets: "build",
       fallback: undefined,
