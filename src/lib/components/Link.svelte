@@ -44,12 +44,36 @@
 			--color-hover: var(--hex-brand-500);
 		}
 
+        font-size: var(--font-size-h3); /*24px --> size-5*/
+
+		position: relative;
 		display: inline-flex;
 		align-items: center;
-		gap: var(--space-1);
+		gap: var(--size-1);
+
+		&::after {
+			content: "";
+			position: absolute;
+			bottom: -0.1em; /* distanza tra testo e linea proporzionale alla dimensione del testo */
+			left: 0;
+			height: 0.05em; /* spessore della linea proporzionale alla dimensione del testo */
+			width: 100%;
+			background-color: var(--color-hover);
+			transform: scaleX(0);
+			transform-origin: left;
+
+            will-change: transform; /* suggerisce al browser di ottimizzare per questa trasformazione. Problema che la linea appariva più sottile alla fine dell'animazione */
+            backface-visibility: hidden; 
+
+			transition: transform 300ms var(--ease-out-quart);
+		}
 
 		&:hover {
 			color: var(--color-hover);
+
+			&::after {
+				transform: scaleX(1);
+			}
 		}
 	}
 </style>
