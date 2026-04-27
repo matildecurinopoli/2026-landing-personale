@@ -15,9 +15,9 @@ body {
   font-family: var(
     --font-primary
   ); /* definito nel file tokens/typography.css */
-  font-size: var(--size-5);
+  font-size: var(--size-4);
   line-height: 1.25;
-  font-weight: 500;
+  font-weight: 400;
   color: var(--color-ink);
 
   background: var(--color-canvas);
@@ -66,6 +66,11 @@ h5 {
   font-size: inherit;
   font-weight: inherit;
 }
+
+h1 { font-size: var(--font-size-h1); }
+h2 { font-size: var(--font-size-h2); }
+h3 { font-size: var(--font-size-h3); }
+h4 { font-size: var(--font-size-h4); }
 
 img,
 video {
