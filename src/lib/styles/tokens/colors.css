@@ -1,0 +1,78 @@
+:root {
+  /* HEX Colors */
+  --hex-brand-100: #cbfdca;
+  --hex-brand-200: #97fb9e;
+  --hex-brand-300: #62f57c;
+  --hex-brand-400: #3bec6c;
+  --hex-brand-500: #00e054;
+  --hex-brand-600: #00c05b;
+  --hex-brand-700: #00a15c;
+  --hex-brand-800: #008157;
+  --hex-brand-900: #006b52;
+
+  --hex-neutral-50: #fafafa;
+  --hex-neutral-100: #edeeee;
+  --hex-neutral-200: #dfe0e1;
+  --hex-neutral-300: #b7b9bc;
+  --hex-neutral-400: #919398;
+  --hex-neutral-500: #63666a;
+  --hex-neutral-600: #3e4042;
+  --hex-neutral-700: #292a2c;
+  --hex-neutral-800: #191a1b;
+  --hex-neutral-900: #040404;
+
+  --hex-orange-100: #ff8000;
+
+  --hex-blue-100: #40bcf4;
+
+  /* Named Colors */
+  @media screen and (prefers-color-scheme: light) {
+    --color-canvas: var(--hex-neutral-50);
+    --color-surface: var(--hex-neutral-100);
+
+    --color-accent: var(--hex-brand-600);
+
+    --color-ink: var(--hex-neutral-900);
+    --color-ink-secondary: var(--hex-neutral-600);
+    --color-ink-inverted: var(--hex-neutral-50);
+
+    /* --color-link-navbar-default: var(--hex-neutral-900); è un --color-ink*/
+    /*--color-link-navbar-hover: var(--hex-brand-600); è un --color-accent*/
+
+    /*--color-primary-button-default: var(--hex-brand-600) è un --color-accent*/
+    --color-primary-button-hover: var(--hex-neutral-800);
+    /*--color-primary-button-ink-default: var(--hex-neutral-900); è un --color-ink*/
+    /*--color-primary-button-ink-hover: var(--hex-brand-900); è un --color-ink*/
+
+    --color-secondary-button-default: var(--hex-neutral-50);
+    --color-secondary-button-hover: var(--hex-neutral-800);
+    /*--color-secondary-button-border-default: var(--hex-brand-600); è un --color-accent*/
+    /*--color-secondary-button-ink-default: var(--hex-brand-600); è un --color-accent*/
+    /*--color-secondary-button-ink-hover: var(--hex-neutral-50); è un --color-ink-inverted*/
+  }
+
+  @media screen and (prefers-color-scheme: dark) {
+    --color-canvas: var(--hex-neutral-900);
+    --color-surface: var(--hex-neutral-800);
+
+    --color-accent: var(--hex-brand-500);
+
+    --color-ink: var(--hex-neutral-50);
+    --color-ink-secondary: var(--hex-neutral-400);
+    --color-ink-inverted: var(--hex-neutral-900);
+
+    /* --color-link-navbar--default: var(--hex-neutral-50); è un --color-ink*/
+    /*--color-link-navbar--hover: var(--hex-brand-500);è un --color-accent*/
+
+    /*--color-primary-button--default: var(--hex-brand-600) è un --color-accent*/
+    --color-primary-button--hover: var(--hex-neutral-200);
+    /*--color-primary-button-ink--default: var(--hex-neutral-900); è un --color-ink*/
+    /*--color-primary-button-ink--hover: var(--hex-brand-900); è un --color-ink*/
+
+    --color-secondary-button--default: var(--hex-neutral-800);
+    --color-secondary-button--hover: var(--hex-neutral-200);
+    /*--color-secondary-button-border--default: var(--hex-brand-500); è un --color-accent*/
+    /*--color-secondary-button-ink--default: var(--hex-brand-500); è un --color-accent*/
+    /*--color-secondary-button-ink--hover: var(--hex-neutral-900); è un --color-ink-inverted*/
+  }
+}
