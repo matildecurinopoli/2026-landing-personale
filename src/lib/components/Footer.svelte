@@ -8,7 +8,7 @@
 <footer class="safe-area">
 	<a href={letterboxdUrl} target="_blank" rel="noopener noreferrer">
 		<picture>
-			<source srcset={letterboxdDarkLogo} media="(prefers-color-scheme: dark)" /> /* DarkLogo per la modalità scura */
+			<source srcset={letterboxdDarkLogo} media="(prefers-color-scheme: dark)" /> 
 			<img src={letterboxdLightLogo} alt="Letterboxd" /> 
 		</picture>
 	</a>
