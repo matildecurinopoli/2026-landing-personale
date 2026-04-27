@@ -16,6 +16,6 @@
 	}
 
 	img {
-		height: var(--size-4);
+		height: var(--size-10);
 	}
 </style>
