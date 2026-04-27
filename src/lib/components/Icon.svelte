@@ -30,4 +30,4 @@ non vengono usate */
     />
 </svelte:head>
   
-<i class="{pack} ph-{name}"></i>
+<i class="{pack} ph-{name}"></i> 
