@@ -13,9 +13,6 @@
     });
 </script>
 
-/* inserisco il link delle icone nell'head di questo documento e non 
-in +layout.svelte perché altrimenti tutte le pagine caricherebbero le icone anche quando
-non vengono usate */
 <svelte:head>
     <link
       rel="stylesheet"
