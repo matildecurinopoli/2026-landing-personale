@@ -7,6 +7,7 @@
 	import "$lib/styles/utilities.css";
 
 	import Header from '$lib/components/Header.svelte';
+	import Hero from '$lib/components/Hero.svelte';
 	import Footer from "$lib/components/Footer.svelte";
 
 	let { children } = $props();
