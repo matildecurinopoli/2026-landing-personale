@@ -15,7 +15,7 @@
 			interview question.
 		</h1>
 	</div>
-	<figure class="hero-figure">
+	<figure class="hero-illustration">
 		<picture>
 			<source media="(prefers-color-scheme: dark)" srcset={illustrationDark} />
 			<img src={illustrationLight} alt="Letterboxd microphone illustration" />
@@ -27,12 +27,12 @@
 	.hero {
 		display: grid;
 		grid-template-columns: 1fr;
-		gap: auto;
+		gap: var(--size-7);
 		padding-block: var(--size-9);
 		
 		& .hero-text {
 			& h1 {
-				margin: 0;
+				font-size: var(--font-size-h2);
 
 				& .letterboxd-link {
 					color: var(--color-accent);
@@ -40,26 +40,41 @@
 			}
 		}
 
-		& .hero-figure {
-			text-align: right;
-
-			& picture {
-				display: block;
-
-				& img {
-					width: 100%;
-					height: auto;
-					max-width: 100%;
-					display: block;
-				}
-			}
+		& .hero-illustration {
+            & picture {
+                display: block;
+            }
+            
+            & img {
+                width: 100%;
+                height: auto;
+            }
 		}
 	}
+
+    @media (min-width: 768px) {
+        .hero {
+            gap: var(--size-8);
+
+            & .hero-text {
+                max-width: 75dvw;
+
+                & h1 {
+                    font-size: var(--font-size-h1);
+                }
+            }  
+        }
+    }
 
 	@media (min-width: 1024px) {
 		.hero {
 			grid-template-columns: 1fr 1fr;
             align-items: center;
+            gap: var(--size-6);
+
+            & .hero-text {
+                max-width: none;
+            }
 		}
 	}
 </style>
