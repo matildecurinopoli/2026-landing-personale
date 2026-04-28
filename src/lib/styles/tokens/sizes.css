@@ -14,4 +14,6 @@
   --size-11: calc(var(--base-size) * 10); /* 160px */
 
   --size-12: calc(var(--base-size) * 1.25); /* 20px */ /*ho aggiunto questa size alla fine perchè mi serviva solo per il testo quindi è un po' così a caso size 12 ma non volevo cambiare tutti i valori :) */
+  --size-13: calc(var(--base-size) * 0.1); /* 1.6px */
+  --size-999: 999rem; 
 }
