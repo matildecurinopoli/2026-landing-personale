@@ -3,7 +3,7 @@
 </script>
 
 <header class="safe-area">
-	<Link title="My four favorites" ref="/" />
+	<Link title="My four favorites" shortTitle="My 4 faves" ref="/" />
 
 	<nav>
 		<Link
