@@ -39,16 +39,16 @@
     /* --color-link-navbar-default: var(--hex-neutral-900); è un --color-ink*/
     /*--color-link-navbar-hover: var(--hex-brand-600); è un --color-accent*/
 
-    /*--color-primary-button-default: var(--hex-brand-600) è un --color-accent*/
-    --color-primary-button-hover: var(--hex-neutral-800);
-    /*--color-primary-button-ink-default: var(--hex-neutral-900); è un --color-ink*/
-    /*--color-primary-button-ink-hover: var(--hex-brand-900); è un --color-ink*/
+    /*--color-primary-button--default: var(--hex-brand-600) è un --color-accent*/
+    --color-primary-button--hover: var(--hex-neutral-800);
+    /*--color-primary-button-ink--default: var(--hex-neutral-900); è un --color-ink*/
+    /*--color-primary-button-ink--hover: var(--hex-brand-900); è un --color-ink*/
 
-    --color-secondary-button-default: var(--hex-neutral-50);
-    --color-secondary-button-hover: var(--hex-neutral-800);
-    /*--color-secondary-button-border-default: var(--hex-brand-600); è un --color-accent*/
-    /*--color-secondary-button-ink-default: var(--hex-brand-600); è un --color-accent*/
-    /*--color-secondary-button-ink-hover: var(--hex-neutral-50); è un --color-ink-inverted*/
+    --color-secondary-button--default: var(--hex-neutral-50);
+    --color-secondary-button--hover: var(--hex-neutral-800);
+    /*--color-secondary-button-border--default: var(--hex-brand-600); è un --color-accent*/
+    /*--color-secondary-button-ink--default: var(--hex-brand-600); è un --color-accent*/
+    /*--color-secondary-button-ink--hover: var(--hex-neutral-50); è un --color-ink-inverted*/
   }
 
   @media screen and (prefers-color-scheme: dark) {
