@@ -1,3 +1,18 @@
+/* Mobile */
 .safe-area {
-    padding-inline: var(--size-10); /*padding inline*/
+    padding-inline: var(--size-5);
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    .safe-area {
+        padding-inline: var(--size-7);
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .safe-area {
+        padding-inline: var(--size-10);
+    }
 }
