@@ -44,7 +44,7 @@
 			--color-hover: var(--hex-brand-500);
 		}
 
-        font-size: var(--font-size-h3); /*24px --> size-5*/
+        font-size: var(--font-size-h2); /*24px --> size-5*/
 
 		position: relative;
 		display: inline-flex;
