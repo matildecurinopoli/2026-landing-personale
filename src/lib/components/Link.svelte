@@ -4,6 +4,7 @@
 	const {
 		ref,
 		title = null,
+		shortTitle = null, //per abbreviazioni su mobile
 		children = null,
 		leadingIcon = null,
 		trailingIcon = null,
@@ -26,7 +27,12 @@
 			<Icon name={leadingIcon} />
 		{/if}
 
-		{title}
+		{#if shortTitle}
+            <span class="mobile-text">{shortTitle}</span>
+            <span class="desktop-text">{title}</span>
+        {:else}
+            {title}
+        {/if}
 
 		{#if trailingIcon}
 			<Icon name={trailingIcon} />
@@ -44,14 +50,37 @@
 			--color-hover: var(--hex-brand-500);
 		}
 
-        font-size: var(--font-size-h2); /*24px --> size-5*/
+        font-size: var(--font-size-h3); /*20px --> size-12*/
 
 		position: relative;
-		display: inline-flex;
-		align-items: center;
-		gap: var(--size-1);
+        display: inline-flex;
+        align-items: center;
+        gap: var(--size-1);
+        color: inherit;
+        text-decoration: none;
+	}
 
-		&::after {
+	@media (min-width: 768px) {
+		a {
+			font-size: var(--font-size-h2);
+		}
+	}
+
+	.desktop-text {
+			display: none;
+		}
+
+	@media (min-width: 768px) {
+		.mobile-text {
+			display: none;
+		}
+		.desktop-text {
+			display: inline;
+		}
+	}
+
+	@media (min-width: 1024px) {
+		a::after {
 			content: "";
 			position: absolute;
 			bottom: -0.1em; /* distanza tra testo e linea proporzionale alla dimensione del testo */
@@ -68,12 +97,14 @@
 			transition: transform 300ms var(--ease-out-quart);
 		}
 
-		&:hover {
-			color: var(--color-hover);
+		a:hover {
+			color: var(--color-hover);		
+		}
 
-			&::after {
+		a:hover::after {
 				transform: scaleX(1);
 			}
-		}
 	}
+
 </style>
+
