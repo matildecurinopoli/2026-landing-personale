@@ -4,7 +4,7 @@
 </script>
 
 <section class="safe-area hero">
-	<div class="hero__text">
+	<div class="hero-text">
 		<h1>
 			This page features my four favorite films, inspired by the famous <a
 				href="https://letterboxd.com/"
@@ -15,7 +15,7 @@
 			interview question.
 		</h1>
 	</div>
-	<figure class="hero__figure">
+	<figure class="hero-figure">
 		<picture>
 			<source media="(prefers-color-scheme: dark)" srcset={illustrationDark} />
 			<img src={illustrationLight} alt="Letterboxd microphone illustration" />
@@ -30,9 +30,8 @@
 		gap: auto;
 		padding-block: var(--size-9);
 		
-		& .hero__text {
+		& .hero-text {
 			& h1 {
-				font-size: var(--font-size-h1);
 				margin: 0;
 
 				& .letterboxd-link {
@@ -41,7 +40,7 @@
 			}
 		}
 
-		& .hero__figure {
+		& .hero-figure {
 			text-align: right;
 
 			& picture {
