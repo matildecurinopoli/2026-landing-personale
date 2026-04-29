@@ -16,7 +16,8 @@
 
 <style>
 	footer {
-		padding-block: var(--size-4);
+		padding-top: none; 
+		padding-bottom: var(--size-5);
 
 		display: flex;
 		justify-content: center;
