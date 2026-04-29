@@ -1,25 +1,22 @@
 <script>
-	import Hero from '$lib/components/Hero.svelte';
-    import Button from '$lib/components/Button.svelte';
+    import Hero from '$lib/components/Hero.svelte';
+    import Card from '$lib/components/Card.svelte';
+    import { myFourFavorites } from '$lib/data/movies-info.js';
 </script>
 
 <Hero />
 
-<div style="padding: var(--size-10) var(--size-11); display: flex; gap: var(--size-4); flex-wrap: wrap;">
-	
-	<Button 
-		variant="primary" 
-		href="https://letterboxd.com/" 
-		trailingIcon="arrow-right"
-	>
-		See on Letterboxd
-	</Button>
+<main class="safe-area movie-grid">
+    {#each myFourFavorites as film}
+        <Card {...film} />
+    {/each}
+</main>
 
-	<Button 
-		variant="secondary" 
-		leadingIcon="play"
-	>
-		Watch trailer
-	</Button>
-
-</div>
+<style>
+    .movie-grid {
+        padding-block: var(--size-5);
+        display: flex;
+        flex-direction: column;
+        gap: var(--size-4);
+    }
+</style>
