@@ -1,5 +1,5 @@
 <script>
-	import favicon from '$lib/assets/favicon.svg';
+	import favicon from '$lib/assets/favicon.ico';
 
 	import "$lib/styles/reset.css";
 	import "$lib/styles/tokens.css";
@@ -7,7 +7,6 @@
 	import "$lib/styles/utilities.css";
 
 	import Header from '$lib/components/Header.svelte';
-	import Hero from '$lib/components/Hero.svelte';
 	import Footer from "$lib/components/Footer.svelte";
 
 	let { children } = $props();
