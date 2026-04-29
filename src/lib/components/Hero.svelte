@@ -28,7 +28,7 @@
 		display: grid;
 		grid-template-columns: 1fr;
 		gap: var(--size-7);
-		padding-block: var(--size-9);
+		padding-block: var(--size-8);
 		
 		& .hero-text {
 			& h1 {
