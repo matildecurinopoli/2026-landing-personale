@@ -54,13 +54,14 @@
         padding: var(--size-3);
         display: flex;
         flex-direction: column;
-        gap: var(--size-2); /* Gap img e contenuto testuale */
+        gap: var(--size-3); /* Gap img e contenuto testuale */
 
         & .card__image-container {
             border-radius: var(--size-3);
             overflow: hidden;
-            height: 30.5rem;
-            aspect-ratio: 3 / 4.5;
+            width: 100%; 
+            height: auto; 
+            aspect-ratio: 3 / 4.5; 
             flex-shrink: 0;
 
             & img {
@@ -133,7 +134,8 @@
             gap: var(--size-5); /* Gap tra immagine e contenuto testuale */
 
             & .card__image-container {
-                height: 100%;
+                height: 100%; 
+                width: auto; 
             }
 
             & .card__content {
@@ -177,7 +179,7 @@
     /* DESKTOP */
     @media (min-width: 1024px) {
         .card {
-            height: 29.5rem;
+            height: 28rem;
             max-width: 100rem;
         }
     }
